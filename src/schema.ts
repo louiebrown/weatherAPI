@@ -1,7 +1,6 @@
 import { gql } from 'apollo-server'
 import { IResolvers } from '@graphql-tools/utils'
-const { makeExecutableSchema } = require('apollo-server');
-
+import { makeExecutableSchema } from '@graphql-tools/schema'
 const typeDefs = gql`
     type Coordinates {
         lon: Float
